@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <h1 class="counter-heading">Angular Temperature Control App Project</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="counter-content">
+                    <div [ngClass]="{'counter-number': true, 'orange': counter > 15, 'blue': counter <= 15}">
+                        <p>{{counter}} °C</p>
+                    </div>
+                    <div class="counter-buttons">
+                        <button (click)="increment()">+</button>
+                        <button (click)="decrement()">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
